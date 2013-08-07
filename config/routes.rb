@@ -1,4 +1,6 @@
 IeSite::Application.routes.draw do
+  resources :recruits
+  match '/signup',  to: 'recruits#new',            via: 'get'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,92 @@
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+  	<!--
+  	1. Contact Details
+
+	2. Why IE?
+
+	3. What IE events have you participated in?
+
+	4. Your interests
+
+	5. Why should we take you?
+
+	6. Why shouldn’t we take you?
+
+	7. Picture/Video caption
+
+	8. You’re about to be executed for an unspecified crime. What would your last words be? 
+	:branch, :caption_response, :contact_no, :email, :first_name, :interests, :last_name, :previous_events, :roll_no, :string, :tricky, :why, :why_not_take, :why_take
+  	 -->
+    <%= form_for(@recruit) do |f| %>
+    	<ol>
+      <li><h2>Contact Details</h2>
+      	  <div class="row">
+      	  	  <div class="span2">
+      	  	  	<%= f.label :first_name, "First name" %>
+		        <%= f.text_field :first_name %>
+      	  	  </div>
+
+      	  	  <div class="span2 offset1">
+      	  	  	<%= f.label :last_name, "Last name" %>
+		        <%= f.text_field :last_name %>
+      	  	  </div>
+
+      	  	  <div class="span2">
+      	  	  	<%= f.label :branch, "Branch" %>
+		        <%= f.text_field :branch %>
+      	  	  </div>
+
+      	  	  <div class="span2 offset1">
+      	  	  	<%= f.label :roll_no, "Roll Number" %>
+		        <%= f.text_field :roll_no %>
+      	  	  </div>
+
+      	  	  <div class="span2">
+      	  	  	<%= f.label :contact_no, "Contact Number" %>
+		        <%= f.text_field :contact_no %>
+      	  	  </div>
+
+      	  	  <div class="span2 offset1">
+      	  	  	<%= f.label :email, "Email Address" %>
+		        <%= f.email_field :email %>
+      	  	  </div>
+      	  </div>
+	      
+  	  </li>
+      <li><h2>Why IE?</h2>
+      	<%= f.text_area :why, class: "span8", size: "3x4" %>
+      </li>
+
+      <li><h2>What IE events have you participated in?</h2>
+      	<%= f.text_area :previous_events, class: "span8", size: "3x4" %>
+      </li>
+
+
+      <li><h2>Your interests</h2>
+      	<%= f.text_area :interests, class: "span8", size: "3x4" %>
+      </li>
+
+      <li><h2>Why should we take you?</h2>
+      	<%= f.text_area :why_take, class: "span8", size: "3x4" %>
+      </li>
+
+      <li><h2>Why shouldn’t we take you?</h2>
+      	<%= f.text_area :why_not_take, class: "span8", size: "3x4" %>
+      </li>
+
+      <li><h2>Caption</h2>
+      	<%= f.text_area :caption_response, class: "span8", size: "3x4" %>
+      </li>
+
+      <li><h2>You’re about to be executed for an unspecified crime. What would your last words be? </h2>
+      	<%= f.text_area :tricky, class: "span8", size: "3x4" %>
+      </li>
+
+
+      <%= f.submit "Submit Registration", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
