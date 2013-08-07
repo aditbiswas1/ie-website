@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  branch: MyString
+  roll_no: MyString
+  contact_no: 1
+  email: MyString
+  why: MyString
+  previous_events: MyString
+  interests: MyString
+  string: MyString
+  why_take: MyString
+  why_not_take: MyString
+  caption_response: MyString
+  tricky: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  branch: MyString
+  roll_no: MyString
+  contact_no: 1
+  email: MyString
+  why: MyString
+  previous_events: MyString
+  interests: MyString
+  string: MyString
+  why_take: MyString
+  why_not_take: MyString
+  caption_response: MyString
+  tricky: MyString
