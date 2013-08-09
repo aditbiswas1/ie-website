@@ -1,9 +1,13 @@
 IeSite::Application.routes.draw do
+  resources :recruits
+  match '/signup',  to: 'recruits#new',            via: 'get'
+  match '/sig',  to: 'static_pages#sig'
+  root :to => 'static_pages#home'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :recruits
-  match '/signup',  to: 'recruits#new',            via: 'get'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
